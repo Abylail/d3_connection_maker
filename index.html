@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Test new graph</title>
+    <style type="text/css">
+        body{
+            margin:0;
+            position: fixed;
+        }
+        svg{
+            position: fixed;
+            top:0;
+            left: 0;
+            right: 0;
+            width: 100%;
+            bottom: 0;
+            z-index: 1;
+        }
+        body:active{
+            cursor: pointer;
+        }
+        ::-webkit-scrollbar { /* chrome based */
+            width: 0px;  /* ширина scrollbar'a */
+            height: 0px;
+            background: transparent;  /* опционально */
+        }
+        h1,h2,h3,h4,h5,h6{
+            cursor: default;
+        }
+        h1,h2,h3,h4,h5,h6:active{
+            cursor: pointer;
+        }
+        foreignObject:hover{
+            cursor: pointer;
+        }
+
+        div.toolbar{
+            height: 80px;
+            border-bottom: 1px solid black;
+            opacity: .4;
+
+            background-color: white;
+            transition: .3s;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 10;
+        }
+        div.toolbar:hover{
+            opacity: 1;
+        }
+        .toolbarButton{
+            position: absolute;
+            z-index: 11;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .toolbarButton img{
+            height: 50%;
+            width: 50%;
+            cursor: pointer;
+            opacity: .6;
+            transition: .3s;
+        }
+        .toolbarButton img:hover{
+            opacity: 1;
+        }
+
+    </style>
+</head>
+<body style="position:absolute;top:0;right:0;bottom:0;left:0;">
+<script src="https://d3js.org/d3.v3.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
